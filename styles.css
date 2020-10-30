@@ -1,0 +1,146 @@
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+  padding: 5em 0;
+  background-color: rgba(228, 228, 228, 0.9)
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 550px;
+  padding: 10px 0;
+  margin: auto;
+  border-radius: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.link{
+  width: 80%;
+  margin: 5px auto;
+  padding: 0 1em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link--box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-radius: 50px;
+}
+
+.link--text{
+  color:white;
+  font-size:1.5rem;
+  font-weight:bold;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link .link--search{
+  background-color:#1C4755;
+}
+
+.link .link--read{
+  background-color:#00A08F;
+}
+
+.link .link--email{
+  background-color:#EFC458;
+}
+
+.link .link--telephone{
+  background-color:#FF9F52;
+}
+
+.link--icon{
+  color:white;
+  font-size:1.5rem;
+  padding: 1em 2em;
+  margin:0;
+}
+
+.link--search .icon--search{
+  background-color:#1C4755;
+  border-radius: 50px;
+}
+
+.link--read .icon--read{
+  background-color: #00A08F;
+  font-size:1.65rem;
+  padding:.855em 2em;
+  border-radius: 50px;
+}
+
+.link--email .icon--email{
+  background-color:#EFC458;
+  border-radius: 50px;
+}
+
+.link--telephone .icon--telephone{
+  background-color:#FF9F52;
+  border-radius: 50px;
+}
+
+.link--search:hover{
+  background-color:rgba(36,107,137,0.6);
+}
+
+.link--read:hover{
+  background-color:rgba(219,38,10,0.6);
+
+}
+
+.link--email:hover{
+  background-color:rgba(113,66,133,0.6);
+}
+
+.link--telephone:hover{
+  background-color:rgba(18,102,33,0.6);
+}
+
+/*animations*/
+
+.link--search:hover .fa-search{
+  transform:scale(1.5);
+  transition: ease-in 450ms;
+}
+
+.link--read:hover .fa-chevron-right{
+  animation-name:to-right;
+  animation-duration:450ms;
+  animation-iteration-count:infinite;
+}
+
+@keyframes to-right{
+  100%{transform:translatex(30%);
+
+  }
+}
+
+.link--email:hover .fa-envelope{
+  transform:skewx(-15deg);
+  transition:450ms;
+}
+
+.link--telephone:hover .fa-phone-alt{
+  animation-name:ringing;
+  animation-duration:450ms;
+  animation-iteration-count:infinite;
+}
+
+@keyframes ringing{
+  100%{
+    transform:rotate(15deg);
+  }
+}
