@@ -93,20 +93,20 @@ body{
 }
 
 .link--search:hover{
-  background-color:rgba(36,107,137,0.6);
+  background-color:rgb(166, 196, 75);
 }
 
 .link--read:hover{
-  background-color:rgba(219,38,10,0.6);
+  background-color:rgba(219, 38, 10, 0.6);
 
 }
 
 .link--email:hover{
-  background-color:rgba(113,66,133,0.6);
+  background-color:rgb(174,	25,	233);
 }
 
 .link--telephone:hover{
-  background-color:rgba(18,102,33,0.6);
+  background-color:rgb(17, 173, 87);
 }
 
 /*animations*/
