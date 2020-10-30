@@ -77,21 +77,21 @@ body {
   font-size:1.5rem;
 }
 
-.icon--color-bkgn-blue {
+.item__icon--color-bkgn-blue {
   background-color:#1C4755;
 }
 
-.icon--color-bkgn-tile {
+.item__icon--color-bkgn-tile {
   background-color: #00A08F;
   font-size:1.65rem;
   padding:.855em 1.5em;
 }
 
-.icon--color-bkgn-yellow {
+.item__icon--color-bkgn-yellow {
   background-color:#EFC458;
 }
 
-.icon--color-bkgn-orange {
+.item__icon--color-bkgn-orange {
   background-color:#FF9F52;
 }
 
