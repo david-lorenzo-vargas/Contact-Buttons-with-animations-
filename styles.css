@@ -1,8 +1,8 @@
-*, *::before, *::after{
+*, *::before, *::after {
   box-sizing:border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 5em 0;
   background-color: rgba(228, 228, 228, 0.9)
@@ -21,8 +21,7 @@ body{
   align-items: center;
 }
 
-
-.link{
+.item {
   width: 80%;
   margin: 5px auto;
   padding: 0 1em;
@@ -30,117 +29,103 @@ body{
   cursor: pointer;
 }
 
-.link--box{
+.item__body {
   display:flex;
   justify-content:space-between;
   align-items:center;
   border-radius: 50px;
 }
 
-.link--text{
-  font-family: 'Nunito', sans-serif;
-  color:white;
-  font-size:1.5rem;
+.item__text {
   margin-left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text {
+  font-family: 'Nunito', sans-serif;
+  color:white;
+  font-size:1.5rem;
   text-transform: uppercase;
 }
 
-.link .link--search{
+.item--color-bkgn-blue {
   background-color:#1C4755;
 }
 
-.link .link--read{
+.item--color-bkgn-tile {
   background-color:#00A08F;
 }
 
-.link .link--email{
+.item--color-bkgn-yellow {
   background-color:#EFC458;
 }
 
-.link .link--telephone{
+.item--color-bkgn-orange {
   background-color:#FF9F52;
 }
 
-.link--icon{
-  color:white;
-  font-size:1.5rem;
+.item__icon {
   padding: 1em 2em;
   margin:0;
-}
-
-.link--search .icon--search{
-  background-color:#1C4755;
   border-radius: 50px;
 }
 
-.link--read .icon--read{
+.icon {
+  color:white;
+  font-size:1.5rem;
+}
+
+.icon--color-bkgn-blue {
+  background-color:#1C4755;
+}
+
+.icon--color-bkgn-tile {
   background-color: #00A08F;
   font-size:1.65rem;
-  padding:.855em 2em;
-  border-radius: 50px;
+  padding:.855em 1.5em;
 }
 
-.link--email .icon--email{
+.icon--color-bkgn-yellow {
   background-color:#EFC458;
-  border-radius: 50px;
 }
 
-.link--telephone .icon--telephone{
+.icon--color-bkgn-orange {
   background-color:#FF9F52;
-  border-radius: 50px;
-}
-
-.link--search:hover{
-  background-color:rgb(166, 196, 75);
-}
-
-.link--read:hover{
-  background-color:rgba(219, 38, 10, 0.6);
-
-}
-
-.link--email:hover{
-  background-color:rgb(174,	25,	233);
-}
-
-.link--telephone:hover{
-  background-color:rgb(17, 173, 87);
 }
 
 /*animations*/
 
-.link--search:hover .fa-search{
+.item-search:hover .fa-search {
   transform:scale(1.5);
   transition: ease-in 450ms;
 }
 
-.link--read:hover .fa-chevron-right{
+.item-read:hover .fa-chevron-right {
   animation-name:to-right;
   animation-duration:450ms;
   animation-iteration-count:infinite;
 }
 
-@keyframes to-right{
+@keyframes to-right {
   100%{transform:translatex(30%);
 
   }
 }
 
-.link--email:hover .fa-envelope{
+.item-email:hover .fa-envelope {
   transform:skewx(-15deg);
   transition:450ms;
 }
 
-.link--telephone:hover .fa-phone-alt{
+.item-telephone:hover .fa-phone-alt {
   animation-name:ringing;
   animation-duration:450ms;
   animation-iteration-count:infinite;
 }
 
-@keyframes ringing{
+@keyframes ringing {
   100%{
     transform:rotate(15deg);
   }
