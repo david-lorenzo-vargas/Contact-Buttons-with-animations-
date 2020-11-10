@@ -1,2 +1,2 @@
 # Contact-Buttons-with-animations-
-HTML &amp; SCSS only
+HTML &amp; CSS only
